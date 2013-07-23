@@ -2,5 +2,5 @@
 <subexp>::=<subexp>-<mulexp>|<mulexp>
 <mulexp>::=<mulexp>*<powexp>|<powexp>
 <divexp>::=<divexp>/<powexp>|<powexp>
-<rootexp>::=(<addexp>)|<id>
+<rootexp>::=(<addexp>)|<int>|<real>|<var>
 <powexp>::=<rootexp>#<powexp>|<rootexp>

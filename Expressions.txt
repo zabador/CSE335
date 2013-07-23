@@ -1,6 +1,4 @@
-<addexp>::=<addexp>+<mulexp>|<mulexp>
-<subexp>::=<subexp>-<mulexp>|<mulexp>
-<mulexp>::=<mulexp>*<powexp>|<powexp>
-<divexp>::=<divexp>/<powexp>|<powexp>
-<rootexp>::=(<addexp>)|<int>|<real>|<var>
+<addSubExp>::=<addSubExp>+<mulexp>|<addSubExp>-<mulDivExp>|<mulDivExp>
+<mulDivExp>::=<mulDivExp>*<powexp>|<mulDivExp>/<powExp>|<powexp>
+<rootexp>::=(<addSubExp>)|<int>|<real>|<var>
 <powexp>::=<rootexp>#<powexp>|<rootexp>

@@ -1,0 +1,8 @@
+<boolOpOr>::=<boolOpOr>||<boolOpAnd>|<boolOpAnd>
+<boolOpAnd>::=<boolOpAnd>&&<boolOpNot>|<boolOpNot>
+<boolOpNot>::=!<boolOpOr>|<boolexp>
+<boolexp>::=<boolexp>==<addSubExp>|<boolexp><=<addSubExp>|<boolexp>>=<addSubexp>|<addSubExp>
+<addSubExp>::=<addSubExp>+<mulexp>|<addSubExp>-<mulDivExp>|<mulDivExp>
+<mulDivExp>::=<mulDivExp>*<powexp>|<mulDivExp>/<powExp>|<powexp>
+<rootexp>::=(<boolOpOr>)|<int>|<real>|<var>
+<powexp>::=<rootexp>#<powexp>|<rootexp>

@@ -1,4 +1,4 @@
-<addSubExp>::=<addSubExp>+<mulexp>|<addSubExp>-<mulDivExp>|<mulDivExp>
+<addSubExp>::=<addSubExp>+<mulDivExp>|<addSubExp>-<mulDivExp>|<mulDivExp>
 <mulDivExp>::=<mulDivExp>*<powexp>|<mulDivExp>/<powExp>|<powexp>
 <rootexp>::=(<addSubExp>)|<int>|<real>|<var>
 <powexp>::=<rootexp>#<powexp>|<rootexp>
